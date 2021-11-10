@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Libre+Franklin:ital,wght@0,100;0,400;0,700;1,100&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    color: #588DDD;
+    font-family: 'Libre Franklin';
+    font-weight: bold;
+}
+a:visited{
+    color: #A13D3D;
+
+}
+
+header{
+    width: 100vw;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+    border: 1px solid gainsboro;
+
+}
+
+img{
+    width: 20px;
+    height: 20px;
+}
+
+.secundary-menu{
+    display: grid;
+    grid-template-columns: 60% 10% 30%;
+    grid-template-rows: 1fr;
+    border: 1px solid gainsboro;
+    justify-content: center;
+    align-items: center;
+}
+
+.vacio{
+    height: 100%;
+    border: 1px solid gainsboro;
+}
+
+.rrss{
+    border: 1px solid gainsboro;
+    height: 100%;
+}
+#secundary-menu{
+    text-align: center;
+    color: black;
+}
+
+
+

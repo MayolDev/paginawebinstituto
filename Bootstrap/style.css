@@ -1,0 +1,9 @@
+.presentation{
+    height: 50vh;
+    background-image: url('./images/presentation.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}

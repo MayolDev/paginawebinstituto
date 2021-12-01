@@ -130,6 +130,9 @@ a:visited{
 
 
 
+
+
+
 .presentation{
     display: flex;
     width: 100%;
@@ -823,3 +826,47 @@ margin-top: 20px;
 }
 
 }
+
+
+
+/* BIBLIOTECA WEB  */
+
+.presentation-biblioteca{
+    background-image: url('../images/biblioteca-3.jpg');
+    background-position: center;
+}
+
+.presentation-content-other{
+    width: 100%;
+    background-color: rgba(83, 81, 81, 0.2);
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation-title-other{
+    color: white;
+    font-family: var(--font-family2);
+    font-weight: bold;
+    font-size:5rem;
+}
+
+.busqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.busqueda > input{
+    width: 20% !important;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+

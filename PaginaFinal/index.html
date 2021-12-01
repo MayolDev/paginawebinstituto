@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <script src="https://kit.fontawesome.com/72d769aa11.js" crossorigin="anonymous"></script>
+    <title>IES MAR DE CÁDIZ</title>
+</head>
+<body>
+
+    <div class="container-principal">
+
+        <!--Header  -->
+        <nav class="navbar navbar-light bg-light d-flex justify-content-end ">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-warning mx-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fas fa-user"></i>
+            
+                Iniciar Sesión
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Inicio de sesión</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+
+                        <div class="form-login-title">
+                            <i class="fas fa-user-lock image-form"></i>
+                        </div>
+
+                        <div class="form-content">
+                            <div class="form-profesores">
+                                <div class="form-title">
+                                    <h2>Profesores</h2>
+                                </div>
+                                <form>
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1">Email</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce email">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputPassword1">Contraseña</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                      <label class="form-check-label" for="exampleCheck1">Mantener conexión</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Entrar</button>
+                                  </form>
+                            </div>
+    
+                            <div class="form-alumnos">
+                                <form>
+                                    <div class="form-title">
+                                        <h2>Alumnos</h2>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1">Email</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce email">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputPassword1">Contraseña</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                      <label class="form-check-label" for="exampleCheck1">Mantener conexión</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Entrar</button>
+                                  </form>
+    
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+                  </nav>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                    <div class="container-fluid  ">
+                      <a class="navbar-brand " href="#">
+                        <img class="rounded" src="./images/logo.JPG" alt="" width="60" height="60"> IES MAR DE CÁDIZ</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav w-50 d-flex justify-content-center ">
+                          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Oferta educativa
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">E.S.O</a></li>
+                              <li><a class="dropdown-item" href="#">Bachiller</a></li>
+                              <li><a class="dropdown-item" href="#">Ciclo Medio</a></li>
+                              <li><a class="dropdown-item" href="#">Ciclo Superior</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Sitios de interés
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Moodle</a></li>
+                              <li><a class="dropdown-item" href="#">Departamentos</a></li>
+                              <li><a class="dropdown-item" href="#">Secretaría</a></li>
+                              <li><a class="dropdown-item" href="#">Biblioteca</a></li>
+                              <li><a class="dropdown-item" href="#">Blog</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Otros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Calendario</a></li>
+                              <li><a class="dropdown-item" href="#">Eventos</a></li>
+                              <li><a class="dropdown-item" href="#">Tour Fotográfico</a></li>
+                              <li><a class="dropdown-item" href="#">Noticias</a></li>
+                            </ul>
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+        <!-- PRESENTACION  -->
+
+        <section class="presentation">
+            <div class="presentation-content">
+                <div class="presentation-text">
+                    <h1 class="presentation-title">
+                        Bienvenidos a una
+                        <span>Educación pública</span>
+                        de calidad.
+                    </h1>
+                </div>
+                <div class="presentation-other-content">
+                    <button class="btn btn-foto-tour">Foto tour</button>
+                    <h3 class="presentation-other-content-title">o visita <a href="#"><span>nuestra oferta educativa</span></a> </h3>
+
+                </div>
+
+            </div>
+            
+        </section>
+
+        <!-- FIN PRESENTACION  -->
+        <!-- SITIOS  -->
+
+        <section class="cards-section">
+            <div class="cards">
+                <div class="card-header">
+                    <h3 class="card-title"><a href="#">Secretaría <span><i class="fas fa-arrow-right"></i></span> </a></h3>
+                </div>
+                    <div class="card-decoration card-decoration1"></div>
+                    <div class="card-image card-image1">
+                        <a href="#"></a>
+                    </div>
+                    <div class="card-text"><p>Secretaría abierta de lunes a viernes de 10:00 a 13:00</p></div>
+                
+            </div>
+            <div class="cards">
+                <div class="card-header">
+                    <h3 class="card-title"><a href="#">Departamentos <span><i class="fas fa-arrow-right"></i></span></a></h3>
+                </div>
+                    <div class="card-decoration card-decoration2"></div>
+                    <div class="card-image card-image2">
+                        <a href="#"></a>
+                    </div>
+                    <div class="card-text"><p>Conoce a los profesores que componen los diferentes departamentos de nuestra oferta educativa</p></div>
+            </div>
+            <div class="cards">
+                <div class="card-header">
+                    <h3 class="card-title"><a href="#">Biblioteca <span><i class="fas fa-arrow-right"></i></span></a></h3>
+                </div>
+                    <div class="card-decoration card-decoration3"></div>
+                    <div class="card-image card-image3">
+                        <a href="#"></a>
+                    </div>
+                    <div class="card-text"><p>Biblioteca con numerosos libros y juegos de mesa para que los alumnos puedan pasar un rato agradable en su tiempo libre</p></div>
+            </div>
+        </section>
+
+        <!-- FIN SITIOS  -->
+        <!-- OFERTA EDUCATIVA  -->
+
+        <section class="educative-section">
+            <h2 class="educative-title">Tenemos una amplia oferta educativa <span><i class="fas fa-arrow-right"></i></span></h2>
+            <div class="educative-content">
+                <div class="educative-icons">
+                    <div class="educative-icon"><img src="./images/school-bag.png" alt="icono de la eso" class="icon-img"> <h3>Educación Secundaria Obligatoria</h3> </div>
+                    <div class="educative-icon"><img src="./images/student.png" alt="icono de bachillerato" class="icon-img"> <h3>Bachillerato</h3> </div>
+                    <div class="educative-icon"><img src="./images/tecnico.png" alt="icono de tecnico medio" class="icon-img"> <h3>Ciclo formativo de grando medio</h3> </div>
+                    <div class="educative-icon"><img src="./images/businessman.png" alt="icono de tecnico superior" class="icon-img"> <h3>Ciclo formativo de grado superior</h3> </div>
+                </div>
+                <div class="educative-text">
+                    <h3>Nos comprometemos a formar a nuestros alumnos para que sean unos buenos profesionales en el futuro, llegando lo mejor preparados a la universidad o al mercado laboral.</h3>
+                    <div class="educative-text-p">
+                        <p>Nuestros alumnos de la <span>ESO y bachillerato</span> tienen la oportunidad de formarse en un entorno seguro y responsable, con numerosos eventos culturales.</p>
+                        <p>En los <span>ciclos formativos</span> te impartiremos la formación mas actualizada para que puedas salir preparado y sin problemas,  al mundo laboral. El 90% de nuestros alumnos encuentra trabajo tras terminar el ciclo. </p>
+                    </div>
+                </div>
+            </div>
+          
+        </section>
+
+
+        <!-- FIN OFERTA EDUCATIVA  -->
+        <!-- Noticias  -->
+
+        <nav class="bg-dark nav-dark pt-5">
+            <div class="nav nav-tabs ms-5" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Tablón</button>
+              <button class="nav-link " id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Alumnos</button>
+              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Profesores</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title">Normas del centro</h5>
+                          <div class="news-card-content">
+                            <div class="new">
+                                <a href="#" class="news-date">24 de noviembre, 2021</a>
+                                <h6 class="new-title">Becas 2021 en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                            </div>
+                            <div class="new">
+                                <a href="#" class="news-date">25 de noviembre, 2021</a>
+                                <h6 class="new-title">Beca transporte en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                            </div>
+                            <div class="new">
+                                <a href="#" class="news-date">1 de enero , 2022</a>
+                                <h6 class="new-title">Ayudas en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                            </div>
+                            <button class="btn btn-danger mt-4"> Ver mas noticias</button>
+                        </div>                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Última actualización hace 3 mins</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Noticias de importancia</h5>
+                            <div class="news-card-content">
+                              <div class="new">
+                                  <a href="#" class="news-date">24 de noviembre, 2021</a>
+                                  <h6 class="new-title">Becas 2021 en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                              </div>
+                              <div class="new">
+                                  <a href="#" class="news-date">25 de noviembre, 2021</a>
+                                  <h6 class="new-title">Beca transporte en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                              </div>
+                              <div class="new">
+                                  <a href="#" class="news-date">1 de enero , 2022</a>
+                                  <h6 class="new-title">Ayudas en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                              </div>
+                          </div> 
+                          <button class="btn btn-warning mt-4"> Ver mas noticias</button>
+                      
+                         </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Última actualización hace 3 mins</small>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Noticias de educacion</h5>
+                            <div class="news-card-content">
+                              <div class="new">
+                                  <a href="#" class="news-date">24 de noviembre, 2021</a>
+                                  <h6 class="new-title">Becas 2021 en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                              </div>
+                              <div class="new">
+                                  <a href="#" class="news-date">25 de noviembre, 2021</a>
+                                  <h6 class="new-title">Beca transporte en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                              </div>
+                              <div class="new">
+                                  <a href="#" class="news-date">1 de enero , 2022</a>
+                                  <h6 class="new-title">Ayudas en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                              </div>
+                          </div>  
+                          <button class="btn btn-primary mt-4"> Ver mas noticias</button>
+
+                        </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Última actualización hace 3 mins</small>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title">Becas y ayudas</h5>
+                          <div class="news-card-content">
+                            <div class="new">
+                                <a href="#" class="news-date">24 de noviembre, 2021</a>
+                                <h6 class="new-title">Becas 2021 en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                            </div>
+                            <div class="new">
+                                <a href="#" class="news-date">25 de noviembre, 2021</a>
+                                <h6 class="new-title">Beca transporte en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                            </div>
+                            <div class="new">
+                                <a href="#" class="news-date">1 de enero , 2022</a>
+                                <h6 class="new-title">Ayudas en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                            </div>
+                        </div>         
+                        <button class="btn btn-danger mt-4"> Ver mas noticias</button>
+
+                    </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Última actualización hace 3 mins</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">ESO y Bachillerato</h5>
+                            <div class="news-card-content">
+                              <div class="new">
+                                  <a href="#" class="news-date">24 de noviembre, 2021</a>
+                                  <h6 class="new-title">Becas 2021 en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                              </div>
+                              <div class="new">
+                                  <a href="#" class="news-date">25 de noviembre, 2021</a>
+                                  <h6 class="new-title">Beca transporte en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                              </div>
+                              <div class="new">
+                                  <a href="#" class="news-date">1 de enero , 2022</a>
+                                  <h6 class="new-title">Ayudas en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                              </div>
+                          </div>         
+                          <button class="btn btn-warning mt-4"> Ver mas noticias</button>
+
+                        </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Última actualización hace 3 mins</small>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Formación profesional</h5>
+                            <div class="news-card-content">
+                              <div class="new">
+                                  <a href="#" class="news-date">24 de noviembre, 2021</a>
+                                  <h6 class="new-title">Becas 2021 en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                              </div>
+                              <div class="new">
+                                  <a href="#" class="news-date">25 de noviembre, 2021</a>
+                                  <h6 class="new-title">Beca transporte en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                              </div>
+                              <div class="new">
+                                  <a href="#" class="news-date">1 de enero , 2022</a>
+                                  <h6 class="new-title">Ayudas en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                              </div>
+                          </div>        
+                          <button class="btn btn-primary mt-4"> Ver mas noticias</button>
+
+                        </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Última actualización hace 3 mins</small>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title">Noticias BOE</h5>
+                          <div class="news-card-content">
+                            <div class="new">
+                                <a href="#" class="news-date">24 de noviembre, 2021</a>
+                                <h6 class="new-title">Becas 2021 en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                            </div>
+                            <div class="new">
+                                <a href="#" class="news-date">25 de noviembre, 2021</a>
+                                <h6 class="new-title">Beca transporte en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                            </div>
+                            <div class="new">
+                                <a href="#" class="news-date">1 de enero , 2022</a>
+                                <h6 class="new-title">Ayudas en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                            </div>
+                        </div>                      
+                        <button class="btn btn-danger mt-4"> Ver mas noticias</button>
+
+                    </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Última actualización hace 3 mins</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Noticias de la Junta</h5>
+                            <div class="news-card-content">
+                              <div class="new">
+                                  <a href="#" class="news-date">24 de noviembre, 2021</a>
+                                  <h6 class="new-title">Becas 2021 en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                              </div>
+                              <div class="new">
+                                  <a href="#" class="news-date">25 de noviembre, 2021</a>
+                                  <h6 class="new-title">Beca transporte en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                              </div>
+                              <div class="new">
+                                  <a href="#" class="news-date">1 de enero , 2022</a>
+                                  <h6 class="new-title">Ayudas en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                              </div>
+                          </div>          
+                          <button class="btn btn-warning mt-4"> Ver mas noticias</button>
+
+                        </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Última actualización hace 3 mins</small>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Noticias importantes</h5>
+                            <div class="news-card-content">
+                              <div class="new">
+                                  <a href="#" class="news-date">24 de noviembre, 2021</a>
+                                  <h6 class="new-title">Becas 2021 en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                              </div>
+                              <div class="new">
+                                  <a href="#" class="news-date">25 de noviembre, 2021</a>
+                                  <h6 class="new-title">Beca transporte en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                              </div>
+                              <div class="new">
+                                  <a href="#" class="news-date">1 de enero , 2022</a>
+                                  <h6 class="new-title">Ayudas en andalucía <i class="fas fa-arrow-right"></i> </h6>
+                              </div>
+                          </div>                
+                          <button class="btn btn-primary mt-4"> Ver mas noticias</button>
+
+                        </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Última actualización hace 3 mins</small>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+
+        <!-- FIN Noticias  -->
+        <!-- Eventos  -->
+
+        <section class="events-section">
+            <h2 class="event-title">Eventos Próximos <i class="fas fa-arrow-right"></i> </h2>
+            <div class="event-container">
+                <div class="events">
+                    <div class="event">
+                        <a href="#" class="event-date">30 de Noviembre, 2021 - 15 Diciembre, 2021</a>
+                        <h4 class="event-title">Concurso de Quien es Quien en Biblioteca <i class="fas fa-arrow-right"></i> </h4>
+                    </div>
+                    <div class="event">
+                        <a href="#" class="event-date">30 de Noviembre, 2021 - 15 Diciembre, 2021</a>
+                        <h4 class="event-title">Torneo de Ajedrez en la Biblioteca <i class="fas fa-arrow-right"></i> </h4>
+                    </div>
+                </div>
+                <button class="btn event-btn btn-warning"> ver más</button>
+            </div>
+        </section>
+
+        <!-- FIN Eventos  -->
+
+
+        <!-- Blog   -->
+
+        <section class="blog-section d-flex p-5">
+            <h2 class="blog-title w-50">Nuestro Blog <i class="fas fa-arrow-right"></i></h2>
+            <div class="blog-content w-100">
+                <div class="card-group">
+                    <div class="card">
+                      <img src="./images/blog1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Vuelve la normalidad en el instituto</h5>
+                        <p>Después de varias semanmas de confinamiento, todo vuelve a la normalidad</p>
+                        <p>El gobierno ha decidido reabrir las aulas pese...</p>                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">22 de febrero, 2022</small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="./images/blog2.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">¡Vamos de excursión!</h5>
+                        <p>Este año nos vamos con el alumnado de la ESO a Barcelona.</p>
+                        <p>Realizaremos numerosas actividades, entre ellas...</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">19 de febrero, 2022</small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="./images/blog3.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Los juegos del pasado</h5>
+                        <p>Donde quedaron los juegos del pasado, donde quedó el escondite, la rayuela, el pollito inglés.</p>
+                        <p>Todo se ha perdido, ahora la mayoría de jovenes...</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">20 de marzo, 2021</small>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- FIN Blog   -->
+
+        <!-- FOOTER   -->
+        
+        <div class=" p-3 bg-dark w-100">
+            <footer class="py-4 text-white">
+              <div class="row w-100 d-flex justify-content-center">
+                <div class="col-2 w-25">
+                  <h5>Sobre el instituto</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><p>Instituto público del Puerto de Santa María, IES Mar de Cádiz.</p></li>
+
+                </div>
+          
+                <div class="col-2  w-25">
+                  <h5>Oferta educativa</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ESO</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Bachiller</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Grado Medio</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Grado superior</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-2  w-25">
+                  <h5>Documentos de interés</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Calendario escolar</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terminos de privacidad</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Junta de andalucía</a></li>
+
+                  </ul>
+                </div>
+                <div class="col-2  w-25">
+                    <h5>Contáctanos</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">+34956445599</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Secretaría de 10:00 a 13:00</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Estamos en c/Poeta Rafael Alberti, Puerto de Sta María, Cádiz</a></li>
+
+                    </ul>
+                  </div>
+          
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex w-100 justify-content-center">
+                    <li class="ms-3"><a class="text-white fs-1" href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="ms-3"><a class="text-white fs-1" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="ms-3"><a class=" text-white fs-1" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                  </ul>
+          
+              <div class="d-flex justify-content-between py-4 my-4 border-top">
+                <p class="w-100 text-center">© 2021 MayolDev, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                  <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+                </ul>
+              </div>
+            </footer>
+
+        <!-- FIN FOOTER   -->
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

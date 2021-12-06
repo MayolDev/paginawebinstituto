@@ -1279,3 +1279,42 @@ margin-top: 20px;
       margin-right: 20px;
     }
   }
+
+
+
+  /*FOTO TOUR*/
+  .foto-container{
+      margin: 0 auto;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+  }
+  .foto {
+
+      margin: 10px;
+      border-radius: 5px;
+      width: 300px;
+      height: 300px;
+  }
+
+  .foto:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: 1s;
+  }
+
+  .tour-fotografico-header{
+      height: 15vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #212529;
+      color: white;
+      font-family: var(--font-family2);
+  }
+
+  .tour-fotografico-header > h1 {
+      font-weight: bold;
+  }

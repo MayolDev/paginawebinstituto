@@ -964,3 +964,163 @@ margin-top: 20px;
     background-image: url("../images/departamentos-2.jpg");
     background-position: center;
 }
+
+
+.container-departamentos{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+
+
+}
+
+.departamento > .card-decoration{
+    padding: 5px;
+}
+
+.departamento{
+    border: 1px solid;
+    margin: 5px;
+    width: 400px;
+}
+.departamento-profesor {
+    border: 1px solid;
+    padding: 5px;
+
+}
+
+
+
+.departamento-profesor > h4 > .nombre {
+    color: var(--secundary-color3);
+}
+
+.departamento-profesor > h4 > span > a{
+    color: var(--secundary-color2);
+    text-decoration: none;
+    width: 100%;
+}
+
+.title-departamento{
+    text-align: center;
+    font-family: var(--font-family2);
+    font-weight: 600;
+    font-size:var(--size-pc-h3);
+    padding: 5px;
+}
+
+.departamento > .departamento-profesor > h4{
+    font-family: var(--font-family2);
+    font-weight: 600;
+    font-size: var(--size-pc-h4);
+    margin-left: 5px;
+    
+}
+
+/*SECRETARIA*/
+
+.presentation-secretaria{
+    background-image: url("../images/secretaria-2.jpg");
+    background-position: center;
+}
+
+
+.container-secretaria{ 
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-right,  .container-left{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+
+.publicaciones-secretaria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.publicaciones{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.publicacion-secretaria{
+    flex-basis: 50%;
+    width: 300px;
+    border: 1px solid;
+    padding: 5px;
+}
+
+.publicacion-secretaria > .card-decoration{
+    padding: 4px;
+}
+
+.publicacion-secretaria > h4{
+    font-family: var(--font-family1);
+    font-size: var(--size-pc-h3);
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+.publicacion-secretaria > p{
+    font-family: var(--font-family1);
+    font-weight: bold;
+    font-size: var(--size-movil-p);
+}
+
+.left-arrow, .right-arrow {
+    flex-basis:25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-arrow > i , .right-arrow > i{
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.informacion-secretaria > h2 , .publicaciones-secretaria  > h2 , .container-right > form > h2 {
+    font-family: var(--font-family2);
+    font-weight: bold;
+    text-align: center;
+    font-size: var(--size-pc-h2);
+
+}
+
+.informacion-secretaria > p {
+    font-family: var(--font-family2);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.container-right > form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-family2);
+}
+
+
+.container-right > form > button{
+    margin-top: 10px;
+}
+

@@ -1318,3 +1318,43 @@ margin-top: 20px;
   .tour-fotografico-header > h1 {
       font-weight: bold;
   }
+
+
+  /*POST*/
+
+  .post-image {
+      width: 100%;
+      height: 50vh;
+  }
+
+  .container-post > header > h1 {
+      font-family: var(--font-family1);
+      font-size: var(--size-pc-h1) ;
+      text-align: center;
+      font-weight: bold;
+       margin-top: 20px;
+  }
+
+  .container-post > header > .card-decoration {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+  }
+
+  .container-post > header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: var(--font-family1);
+      font-weight: bold;
+  }
+
+  .post-content {
+      margin: 50px;
+  }
+
+  .post-content > p {
+      font-family: var(--font-family1);
+      font-size: var(--size-pc-p1);
+  }

@@ -31,6 +31,16 @@
 
   }
 
+  .navbar-inicio{
+    background-color: #f4f4f4 !important;
+}
+
+.btn-inicio{
+
+    font-size: var(--size-movil-h4) !important;
+
+}
+
 .modal-dialog{
     display: flex;
     justify-content: center;
@@ -126,6 +136,11 @@ a:visited{
 }
 
 
+.dropdown-item {
+    padding: 0px;
+    margin-left: 10px;
+    width: 90%;
+}
 
 
 
@@ -259,6 +274,10 @@ a:visited{
 }
 .card-decoration3{
     background-color: var(--secundary-color2);
+    flex-basis: 3%;
+}
+.card-decoration4{
+    background-color: var(--secundary-color4);
     flex-basis: 3%;
 }
 
@@ -870,3 +889,78 @@ margin-top: 20px;
 
 }
 
+.libros-encontrados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.libros{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.libros-encontrados > small{
+    margin: 20px;
+    font-weight: bold;
+    font-family: var(--font-family2);
+
+}
+
+
+.libro{
+    font-family: var(--font-family1);
+    width: 200px;
+    border: 3px solid;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.libro > img{
+    flex-basis: 30%;  
+    margin-bottom: 5px;
+}
+
+.libro > h3 {
+    
+    font-size: var(--size-pc-h3);
+    font-weight: bold;
+}
+
+.libro > .card-decoration {
+    padding: 5px;
+    flex-basis: 0%;
+}
+
+.libro > p{
+    padding: 15px;
+    text-align: left;
+}
+
+.disponible {
+    border-color: var(--secundary-color4);
+}
+
+.disponible > small {
+    color: var(--secundary-color4);
+}
+
+.agotado {
+    border-color: var(--secundary-color3);
+}
+.agotado > small {
+    color: var(--secundary-color3);
+}
+
+
+/*DEPARTAMENTOS*/
+
+.presentation-departamentos{
+    background-image: url("../images/departamentos-2.jpg");
+    background-position: center;
+}
